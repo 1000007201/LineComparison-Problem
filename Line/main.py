@@ -11,6 +11,8 @@ def length_calculate(x1,y1,x2,y2):
     return (((x2-x1)**2)+((y2-y1)**2))**(1/2)
 
 # calling length_calculate function.
-line_lenght = length_calculate(0,0,1,0)
-# Printing length of line:
-print(f"Length of Line is: {line_lenght}")
+line_lenght1 = length_calculate(2,0,1,3)  # length of first line
+line_lenght2 = length_calculate(1,0,2,3)  # length of second line
+
+# Checking Lines are Equal or Not.
+print("Lines are Equal") if line_lenght1 == line_lenght2 else print("Lines are not Equal")
