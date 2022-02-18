@@ -12,7 +12,12 @@ def length_calculate(x1,y1,x2,y2):
 
 # calling length_calculate function.
 line_lenght1 = length_calculate(2,0,1,3)  # length of first line
-line_lenght2 = length_calculate(1,0,2,3)  # length of second line
+line_lenght2 = length_calculate(1,0,2,0)  # length of second line
 
 # Checking Lines are Equal or Not.
-print("Lines are Equal") if line_lenght1 == line_lenght2 else print("Lines are not Equal")
+if line_lenght1 == line_lenght2:
+    print("Lines are Equal")
+elif line_lenght1 > line_lenght2:
+    print("Line 1 is greater than Line 2")
+else:
+    print("Line 2 is greater than Line 1")
